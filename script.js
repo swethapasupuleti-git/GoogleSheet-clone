@@ -34,6 +34,8 @@ function createRow(rowNumber){
        rowCells.id = String.fromCharCode(64 + i)+ rowNumber;
 
        rowCells.addEventListener("focus", onCellFocus)
+       rowCells.addEventListener("input", onformChange)
+       
     }
     mainContainer.appendChild(row);
 }
